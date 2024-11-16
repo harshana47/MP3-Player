@@ -1,0 +1,137 @@
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.music-player {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.player-card {
+    background-color: #1d1d1d;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.3);
+    margin-bottom: 30px;
+}
+
+.album-art {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.song-details h4 {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.song-details p {
+    color: #b0b0b0;
+    font-size: 16px;
+    margin: 0;
+    margin-top: -5px;
+    margin-bottom: 10px;
+}
+
+.controls button {
+    font-size: 30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+    margin: 0 10px;
+}
+
+.controls button:hover {
+    background-color: #0056b3;
+}
+
+.controls button:focus {
+    outline: none;
+}
+
+#progressBarContainer {
+    position: relative;
+    height: 6px;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+.progress-bar {
+    background-color: #007bff;
+    height: 100%;
+    border-radius: 5px;
+    transition: width 0.1s ease-in-out;
+}
+
+.form-range {
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #555;
+}
+
+.form-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: #007bff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.song-list-card {
+    background-color: #1d1d1d;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.3);
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.song-list-card .list-group-item {
+    cursor: pointer;
+    padding: 12px 20px;
+    background-color: #333;
+    color: #ddd;
+    font-size: 18px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border: 1px solid #444;
+}
+
+.song-list-card .list-group-item:hover {
+    background-color: #444;
+    color: white;
+}
+
+.song-list-card .list-group-item.active {
+    background-color: #007bff;
+    color: white;
+}
+
+.time-display {
+    margin-top: 10px;
+    color: #ddd;
+    font-size: 16px;
+}
