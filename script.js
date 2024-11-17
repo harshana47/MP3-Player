@@ -13,10 +13,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let currentTrackIndex = 0;
     const tracks = [
-        { title: 'You are My Sunshine', src: 'lib/mp3/sunshine.mp3' },
-        { title: 'Song 2', src: 'song2.mp3' },
-        { title: 'Song 3', src: 'song3.mp3' },
-        { title: 'Song 4', src: 'song4.mp3' }
+        { title: 'Another Love', src: 'lib/mp3/Another Love.mp3' },
+        { title: 'Save Your Tears', src: 'lib/mp3/Save Your Tears (Lyrics).mp3' },
+        { title: 'Lady Killer', src: 'lib/mp3/lady_killer_II.mp3' },
+        { title: 'Me and the Devil', src: 'lib/mp3/me-and-the-devil.mp3' }
     ];
 
     function formatTime(seconds) {
